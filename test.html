@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<style type="text/css">
-    .box{
-        display: flex;
-        display: -webkit-flex;
-        /*水平方向，左端对齐*/
-        flex-direction: row;
-        /*水平方向，右端对齐*/
-        /*flex-direction: row-reverse;*/
-        /*垂直方向，顶部对齐*/
-        /*flex-direction: column;*/
-        /*垂直方向，底部对齐*/
-        /*flex-direction: column-reverse;*/
-        background: #999;
-        width: 100%;
-    }
-    .box span{
-        margin: 10px 10px;
-        padding: 10px;
-        background: #ff0;
-        width: 50px;
-    }
-    </style>
-    <div class="box">
-        <span>你好1</span>
-        <span>你好2</span>
-        <span>你好3</span>
-        <span>你好4</span>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//LV0
+ const person = {
+  name: 'Boson',
+  age: 20,
+  address: {
+    city: 'Chongqing',
+    area: 'Nanan'
+  }
+}
+let {name, age, address:{city,area}} = person
+//LV1
+function fib(n){
+let n1= 1, n2= 1;
+for(let i=2;i<n;i++){
+    [n1,n2]=[n2,n1+n2]
+}
+return n2
+}
+//LV2
+function add(){
+    let le=arguments.length
+    let o=0
+    for(let p=0;p<le;p++){
+        
+            o+=Number(arguments [p])
     
+}return o
+}
+
+
+
+
+    </script>
+</body>
+</html>
