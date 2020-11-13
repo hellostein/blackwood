@@ -21,9 +21,8 @@ const person = {
       let le=arguments.length
       let o=0
       for(let p=0;p<le;p++){
-          if(!isNaN(arguments[p])) {
+         
               o+=Number(arguments [p])
-      }
   }return o
   }
   
