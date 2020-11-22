@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+
+    
+</head>
+<body>
+  <ul id='ul1'>
+<li>come on and bring your shovel</li>
+<li>we are out for touble and fright</li>
+<li>we will take all we can carry</li>
+<li>from the old cemetery tonight</li>
+</ul>
+<script>
+  var list=document.getElementById('ul1').children;
+
+  for(var i=0;i<list.length;i++){
+      list[i].setAttribute('index',i+1); 
+      list[i].onclick=function ( ) {
+        
+        alert("No."+this.getAttribute('index'));
+      }
+  }
+  var kk=document.getElementsByTagName('li')
+  for(var i = 0;i <4;i++){
+		if(i % 2!=0){
+			kk[i].style.backgroundColor="green";
+		}else{
+            kk[i].style.backgroundColor="red";
+
+        }}
+  </script>
+</body>
+</html>

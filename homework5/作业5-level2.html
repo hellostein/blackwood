@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+
+    
+</head>
+<body>
+  <p id=pra> Cthulhu fhtagn!</p>
+  <button onclick="swi()">Click me</button>
+  <button onclick="tur()">Try this</button>
+<script>
+  function swi(){
+    document.bgColor='blue'
+  }
+  var size=15
+  var i=1
+  function tur(){
+    if(i<=5){
+    size+=3
+    document.getElementById('pra').style.fontSize=size+'px'
+    i++}
+    else{
+      size=15
+      document.getElementById('pra').style.fontSize=size+'px'
+      i=1
+    }
+    
+  }
+
+</script>
+
+</body>
+</html>
